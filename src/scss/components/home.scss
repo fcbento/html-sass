@@ -1,0 +1,30 @@
+#home{
+    background: url('../assets/bg.jpg') no-repeat center center;
+    background-size: cover;
+    vertical-align: middle;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+}
+
+.overlay{
+    background: #00F260;
+    background: -webkit-linear-gradient(to right, rgb(156, 161, 165), rgb(0, 0, 0));
+    background: linear-gradient(to right, #0575E6, #00F260);
+    opacity: 0.9;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+}

@@ -1,0 +1,20 @@
+button{
+    padding: 15px 30px;
+    margin-bottom: 1rem;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    line-height: 1.42857143;
+    &:hover{
+        background: #ce3232;
+        border: 2px solid #ce3232;
+    }
+    &:focus{
+        background: #ce3232;
+        border: 2px solid #ce3232;
+        outline: none;
+    }
+}
