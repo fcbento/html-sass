@@ -1,0 +1,97 @@
+#projects{
+    padding: 80px;
+    h2{
+        margin: 0;
+    }
+
+    .work-thumb{
+        margin: 10px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        border-radius: 3px;
+        
+        a{
+            &:hover{
+                color: #ce3232;
+                outline: none;                
+            }
+        }
+
+        .work-info {
+            
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            
+            &:after{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                content: "";
+                background: #ce3232;
+                opacity: 0;
+                transition: 0.5s;
+            }
+            
+            &:hover{
+                &::after{
+                    opacity: 0.8;
+                }
+            }
+
+            small{
+                color: #d9d9d9;
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: 500;
+                letter-spacing: 1px;
+                margin-top: 3px;
+            }
+
+            small {
+                transform: translateY(100%);
+                opacity: 0;
+                display: block;
+                transition: 0.5s 0.2s;
+                color: #ffffff;
+                z-index: 2;
+                position: relative;
+            }
+
+            h3{
+                transform: translateY(100%);
+                opacity: 0;
+                display: block;
+                transition: 0.5s 0.2s;
+                color: #ffffff;
+                z-index: 2;
+                position: relative;
+            }
+        }
+
+        &:hover{
+            .work-info {
+
+                h3{
+                    transform: translateY(0px);
+                     opacity: 1;
+                }
+
+                small{
+                    transform: translateY(0px);
+                    opacity: 1;
+                }
+            }
+        }
+   }
+}
