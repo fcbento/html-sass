@@ -1,3 +1,83 @@
+@import 'partials/colors';
+
 #blog{
+
     padding: 60px;
+    background: #f0f0f0;
+    
+    h2{
+        margin:0
+    }
+    
+    .bx{
+        
+        margin: 10px;
+        background: #ffffff;
+        -webkit-box-shadow: 0 1px 30px $shadow;
+        -moz-box-shadow: 0 1px 30px $shadow;
+        box-shadow: 0 1px 30px $shadow;
+        border-radius: 3px;
+        text-align: left;
+        margin-bottom: 30px;
+        height: 352px; 
+
+        .media-left{
+            width: 45%;
+            padding-right: 10px;
+        }
+
+        .media-info{
+            display: table-cell;
+            vertical-align: top;
+            padding: 75px 25px;
+            width: 10000px;
+            zoom: 1;
+            overflow: hidden;
+            text-align: left;
+        }
+
+        img{
+            height: 352px;
+            float: left;
+        }
+
+        button{
+            
+            background: $light-blue;
+            
+            &:hover{
+                border-color: $darker-blue;
+                background-color: $darker-blue;
+            }
+        }
+
+        small{
+            color: $red;
+            font-weight: 500;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        a{
+            color: #252525;
+            font-weight: normal;
+            transition: 0.5s;
+            text-decoration: none !important;
+            font-size: 1.5em;
+
+            &:hover{
+                color: $red;
+            }
+        }
+
+        p{
+            color: $grey;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 25px;
+            margin: 0px 0px 10px;
+        }
+    }
+
+
 }
